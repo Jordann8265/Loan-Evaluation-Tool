@@ -14,3 +14,17 @@ payment_number = 0
 # Print the header
 print("\nPmt # | Balance      | Interest  | Principal")
 print("-" * 45)
+
+#The calculation loop
+while balance > 0:
+    payment number += 1
+    # calculate interest for this period 
+    interest_payment = balance * daily_rate *DAYS_IN_MONTH
+    # Calculate how much goes to the principal
+    principal_payment = monthly_payment - interest_payment
+    # Check if this is the final payment
+    if balance < principal_payment:
+        principal_payment = balance
+        balance = 0
+    else:
+        balance = balance - principal_payment
