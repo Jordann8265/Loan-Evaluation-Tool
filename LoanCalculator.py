@@ -17,7 +17,7 @@ print("-" * 45)
 
 #The calculation loop
 while balance > 0:
-    payment number += 1
+    payment_number += 1
     # calculate interest for this period 
     interest_payment = balance * daily_rate *DAYS_IN_MONTH
     # Calculate how much goes to the principal
