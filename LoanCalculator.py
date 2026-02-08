@@ -28,3 +28,8 @@ while balance > 0:
         balance = 0
     else:
         balance = balance - principal_payment
+    #output the results for this month
+    print(f"{payment_number:<5} | ${balance:<10.2f} | ${interest_payment:<8.2f} | ${principal_payment:<8.2f}")
+
+print("-" * 45)
+print("Loan paid off!")
